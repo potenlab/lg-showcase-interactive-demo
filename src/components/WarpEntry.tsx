@@ -120,23 +120,29 @@ export default function WarpEntry({ onComplete }: WarpEntryProps) {
                 disabled={isAccelerating}
                 className="group relative cursor-pointer disabled:cursor-not-allowed"
               >
-                {/* Button glow ring */}
-                <div className="absolute -inset-[2px] rounded-full bg-gradient-to-r from-blue-500/40 via-purple-500/40 to-blue-500/40 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500" />
+                {/* Outer glow on hover */}
+                <div
+                  className="absolute -inset-[6px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at 50% 50%, rgba(60, 160, 255, 0.15), transparent 70%)",
+                  }}
+                />
 
-                {/* Button border gradient */}
-                <div className="absolute -inset-[1px] rounded-full bg-gradient-to-r from-blue-500/60 via-cyan-400/40 to-purple-500/60 opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
-
-                {/* Button inner */}
-                <div className="relative px-14 py-5 rounded-full bg-black/80 backdrop-blur-sm border border-white/[0.05]">
-                  <span
-                    className="text-[clamp(0.8rem,1.5vw,0.95rem)] font-medium tracking-[0.2em] uppercase bg-gradient-to-r from-blue-200 via-white to-blue-200 bg-clip-text text-transparent"
-                    style={{
-                      backgroundSize: "200% auto",
-                      animation: "shimmer 3s linear infinite",
-                    }}
-                  >
-                    Start Voyage
-                  </span>
+                {/* Gradient border */}
+                <div
+                  className="relative rounded-full p-[1.5px]"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(0, 200, 255, 0.7), rgba(80, 120, 255, 0.5), rgba(160, 100, 255, 0.6))",
+                  }}
+                >
+                  {/* Button inner */}
+                  <div className="rounded-full px-16 py-5 bg-[rgba(8,12,30,0.85)] backdrop-blur-sm">
+                    <span className="text-[clamp(1.1rem,2.2vw,1.5rem)] font-medium tracking-[0.18em] text-white">
+                      Start Voyage
+                    </span>
+                  </div>
                 </div>
               </button>
 
