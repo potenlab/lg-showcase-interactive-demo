@@ -1,100 +1,114 @@
+# PRD - Interactive Animation Demo (Space Voyage Concept)
 
+## 1. Project Objective
 
-📄 PRD – Interactive Animation Demo (Space Voyage Concept)
+This demo is designed to present the core interactive experience of the proposed micro-site for **LG Academy**.
 
-1. Project Objective
+The purpose is not to demonstrate full system functionality, but to validate the **immersive storytelling and visual transformation** concept.
 
-This demo is designed to present the core interactive experience of the proposed micro-site for LG Academy.
+### Key Goals
 
-The purpose is not to demonstrate full system functionality, but to validate the immersive storytelling and visual transformation concept.
+- Deliver a cinematic opening experience
+- Demonstrate real-time transformation of user input into visual elements
+- Create an emotionally engaging result reveal sequence
 
-Key Goals
-	•	Deliver a cinematic opening experience
-	•	Demonstrate real-time transformation of user input into visual elements
-	•	Create an emotionally engaging result reveal sequence
+---
 
-⸻
+## 2. Feature Scope (3-Screen Demo)
 
-🎬 Feature Scope (3-Screen Demo)
+---
 
-⸻
+### Screen 1 - Warp Entry
 
-🔹 Screen 1 – Warp Entry
+![Screen 1 - Warp Entry](reference/screen-1.png)
 
-Objective
+#### Objective
 
 To establish that this is not a conventional survey tool, but an immersive narrative experience.
 
-UI Composition
-	•	Fullscreen dark background
-	•	Centered Lottie warp-speed animation
-	•	Bottom CTA button: “Start Voyage”
+#### UI Composition
 
-Interaction Flow
-	•	User clicks “Start Voyage”
-	•	Warp animation accelerates (scale + motion blur effect)
-	•	After 0.6 seconds, smooth transition to cockpit interface
+- Fullscreen dark background
+- Centered Lottie warp-speed animation
+- Bottom CTA button: **"Start Voyage"**
 
-Technologies Used
-	•	Lottie (warp.json animation file)
-	•	Framer Motion (opacity + scale transitions)
-	•	CSS blur and glow effects
+#### Interaction Flow
 
-⸻
+- User clicks "Start Voyage"
+- Warp animation accelerates (scale + motion blur effect)
+- After 0.6 seconds, smooth transition to cockpit interface
 
-🔹 Screen 2 – Input → Visual Transformation
+#### Technologies Used
 
-Objective
+- **Lottie** - `warp.json` animation file
+- **Framer Motion** - opacity + scale transitions
+- **CSS** - blur and glow effects
+
+---
+
+### Screen 2 - Input / Visual Transformation
+
+![Screen 2 - Input / Visual Transformation](reference/screen-2.png)
+
+#### Objective
 
 To demonstrate how user input dynamically transforms into visual system elements.
 
-UI Layout
-	•	Left panel: Text input area
-	•	Right panel: Spaceship status dashboard
-	•	Engine indicator
-	•	Fuel gauge
-	•	System status label
+#### UI Layout
 
-Interaction Flow
-	1.	User enters text (e.g., strengths or experience)
-	2.	User clicks “Analyze System”
-	3.	1-second loading animation plays
-	4.	Visual transformation occurs
+- **Left panel:** Text input area
+- **Right panel:** Spaceship status dashboard
+  - Engine indicator
+  - Fuel gauge
+  - System status label
 
-Visual Transformations
-	•	Engine glow activates (CSS shadow effect)
-	•	Fuel gauge animates from 0% → 75%
-	•	UI theme color transitions from blue → purple
+#### Interaction Flow
 
-Technical Implementation
-	•	Framer Motion → animated width progression
-	•	CSS transitions → dynamic theme color change
-	•	Lottie → engine ignition animation
+1. User enters text (e.g., strengths or experience)
+2. User clicks **"Analyze System"**
+3. 1-second loading animation plays
+4. Visual transformation occurs
 
-⸻
+#### Visual Transformations
 
-🔹 Screen 3 – Identity Reveal
+- Engine glow activates (CSS shadow effect)
+- Fuel gauge animates from 0% to 75%
+- UI theme color transitions from blue to purple
 
-Objective
+#### Technical Implementation
+
+- **Framer Motion** - animated width progression
+- **CSS transitions** - dynamic theme color change
+- **Lottie** - engine ignition animation
+
+---
+
+### Screen 3 - Identity Reveal
+
+![Screen 3 - Identity Reveal](reference/screen-3.png)
+
+#### Objective
 
 To create an emotionally impactful identity generation moment.
 
-UI Composition
-	•	Darkened overlay background
-	•	Center holographic identity card
+#### UI Composition
 
-Animation Sequence
-	1.	Background dims
-	2.	Subtle particle fade-in effect
-	3.	Text appears with typewriter animation
+- Darkened overlay background
+- Center holographic identity card
 
-Example Output
+#### Animation Sequence
 
-Strategic Navigator
-A leader who structures complexity and charts clear direction.
+1. Background dims
+2. Subtle particle fade-in effect
+3. Text appears with typewriter animation
 
-Technologies Used
-	•	Framer Motion (fade + upward motion)
-	•	Typewriter effect (JavaScript-based)
-	•	CSS glow and backdrop blur for hologram styling
+#### Example Output
 
+> **Strategic Navigator**
+> A leader who structures complexity and charts clear direction.
+
+#### Technologies Used
+
+- **Framer Motion** - fade + upward motion
+- **Typewriter effect** - JavaScript-based
+- **CSS** - glow and backdrop blur for hologram styling
