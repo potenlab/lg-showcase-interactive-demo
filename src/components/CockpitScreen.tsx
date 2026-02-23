@@ -350,7 +350,7 @@ export default function CockpitScreen({ onComplete }: CockpitScreenProps) {
                 className="text-xs font-mono"
                 style={{ color: theme.text, transition: "color 1.5s ease" }}
               >
-                {isActivated ? "75%" : "0%"}
+                {isActivated ? "100%" : "0%"}
               </span>
             </div>
 
@@ -363,7 +363,7 @@ export default function CockpitScreen({ onComplete }: CockpitScreenProps) {
                   transition: "background 1.5s ease, box-shadow 1.5s ease",
                 }}
                 initial={{ width: "0%" }}
-                animate={{ width: isActivated ? "75%" : "0%" }}
+                animate={{ width: isActivated ? "100%" : "0%" }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
               />
             </div>
